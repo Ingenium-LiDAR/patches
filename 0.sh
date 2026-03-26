@@ -32,4 +32,6 @@ echo "lidar ALL=(ALL) NOPASSWD: $SECURE_SCRIPT" | sudo EDITOR='tee -a' visudo -f
 
 #AB Add a command to run the secure copy of get_new_patches.sh to .profile, which runs once on login
 echo -e "\n#AB batch script to automatically seek and install patches" >> "$HOME/.profile"
-echo "sudo $SECURE_SCRIPT &" >> "$HOME/.profile"
+echo "cd /usr/local/bin/" >> "$HOME/.profile"
+echo "sudo ./get_new_patches.sh &" >> "$HOME/.profile"
+echo "cd ~" >> "$HOME/.profile"

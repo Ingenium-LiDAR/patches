@@ -8,7 +8,7 @@ git pull origin main
 
 #AB Configuration
 DIRECTORY="$HOME/Documents/GitHub/patches/"
-LAST_PATCH=$(cat "$HOME/.patches.txt")
+LAST_PATCH=$(cat "$HOME/.patches.txt" | xargs)
 GREATER_FILES=()
 
 
