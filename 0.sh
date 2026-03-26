@@ -1,5 +1,10 @@
 #!/bin/bash
 
+sudo rm -rfd "$HOME/Documents/GitHub/patches" #AB Remove any existing patches repo, to ensure a clean slate.
+rm 0.sh
+
+
+
 #AB Set up patches.txt file
 cd "$HOME"
 touch .patches.txt
