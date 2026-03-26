@@ -7,7 +7,7 @@ git pull origin main
 
 
 #AB Configuration
-DIRECTORY="$HOME/Documents/GitHub/patches"
+DIRECTORY="/home/lidar/Documents/GitHub/patches/"
 LAST_PATCH=$(cat ~/.patches.txt)
 GREATER_FILES=()
 

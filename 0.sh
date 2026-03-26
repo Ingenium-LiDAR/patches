@@ -14,7 +14,7 @@ git clone https://github.com/Ingenium-LiDAR/patches.git
 SECURE_SCRIPT="/usr/local/bin/get_new_patches.sh"
 
 #AB Move the initially downloaded version to a secure location where git can't update it
-sudo cp "$HOME/Documents/GitHub/patches/get_new_patches.sh" "$SECURE_SCRIPT"
+sudo cp "/home/lidar/Documents/GitHub/patches/get_new_patches.sh" "$SECURE_SCRIPT"
 
 
 sudo chown root:root "$SECURE_SCRIPT" #AB Change the ownership to root, so that only the root user can modify it.
