@@ -3,7 +3,7 @@
 #AB Set up patches.txt file
 cd /home/lidar
 touch .patches.txt
-echo "0" >> .patches.txt
+echo "0" > .patches.txt
 
 
 cd /home/lidar/Documents/GitHub
