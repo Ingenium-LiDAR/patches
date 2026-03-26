@@ -1,14 +1,18 @@
 #!/bin/bash
 
+#AB Get the original user's home directory (works even when run with sudo)
+ORIGINAL_USER="${SUDO_USER:-$(whoami)}"
+ORIGINAL_HOME=$(eval echo ~$ORIGINAL_USER)
+
 #AB Update the patches repo
-cd "$HOME/Documents/GitHub/patches"
+cd "$ORIGINAL_HOME/Documents/GitHub/patches"
 git pull origin main
 
 
 
 #AB Configuration
-DIRECTORY="$HOME/Documents/GitHub/patches/"
-LAST_PATCH=$(cat "$HOME/.patches.txt" | xargs)
+DIRECTORY="$ORIGINAL_HOME/Documents/GitHub/patches/"
+LAST_PATCH=$(cat "$ORIGINAL_HOME/.patches.txt" | xargs)
 GREATER_FILES=()
 
 
