@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #AB Update the patches repo
-cd ~/Documents/GitHub/patches
+cd /home/lidar/Documents/GitHub/patches
 git pull origin main
 
 
 
 #AB Configuration
 DIRECTORY="/home/lidar/Documents/GitHub/patches/"
-LAST_PATCH=$(cat ~/.patches.txt)
+LAST_PATCH=$(cat /home/lidar/.patches.txt)
 GREATER_FILES=()
 
 

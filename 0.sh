@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #AB Set up patches.txt file
-cd ~
+cd /home/lidar
 touch .patches.txt
 echo "0" >> .patches.txt
 
 
-cd ~/Documents/GitHub
+cd /home/lidar/Documents/GitHub
 git clone https://github.com/Ingenium-LiDAR/patches.git
 
 # Define paths
