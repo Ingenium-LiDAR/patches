@@ -7,3 +7,6 @@ Every patch file released must:
 3. Be approved by the project lead it if it involves a major change.
 4. Be reviewed for safety
 5. Contain a line of code to alter the ~/.patches.txt file. (This should be a plain text file containing only the integer code of the latest patch that was installed)
+
+NOTE!
+Patch 0 (i.e. 0.sh) must be downloaded by hand and run in Terminal manually. It will prompt sudo.
