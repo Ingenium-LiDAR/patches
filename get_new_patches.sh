@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#AB Get the original user's home directory (works even when run with sudo)
+#AB Get the original user's home directory 
 ORIGINAL_USER="${SUDO_USER:-$(whoami)}"
 ORIGINAL_HOME=$(eval echo ~$ORIGINAL_USER)
 
